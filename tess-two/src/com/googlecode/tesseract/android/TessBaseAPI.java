@@ -316,6 +316,7 @@ public class TessBaseAPI {
      * @return <code>true</code> on success
      */
     public boolean init(String datapath, String language, @OcrEngineMode int ocrEngineMode) {
+        Log.d("sss", datapath);
         if (datapath == null)
             throw new IllegalArgumentException("Data path must not be null!");
         if (!datapath.endsWith(File.separator))
